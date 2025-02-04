@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Bookstore</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.HTML">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="C:\Users\Student\Desktop\Full'\Contact.HTML">Contact</a></li>
+                <li><a href="C:\Users\Student\Desktop\Full'\Shop.HTML">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Categories Section -->
+    <main>
+        <section id="categories">
+            <h2>Book Categories</h2>
+            <div class="category-list">
+                <div class="category">
+                    <img src="fiction.jpg" alt="Fiction Books">
+                    <h3>Fiction</h3>
+                    <a href="#">Browse Fiction</a>
+                </div>
+                <div class="category">
+                    <img src="nonfiction.jpg" alt="Non-Fiction Books">
+                    <h3>Non-Fiction</h3>
+                    <a href="#">Browse Non-Fiction</a>
+                </div>
+                <div class="category">
+                    <img src="mystery.jpg" alt="Mystery Books">
+                    <h3>Mystery</h3>
+                    <a href="#">Browse Mystery</a>
+                </div>
+                <div class="category">
+                    <img src="fantasy.jpg" alt="Fantasy Books">
+                    <h3>Fantasy</h3>
+                    <a href="#">Browse Fantasy</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Bookstore. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<style>
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #4b7c4bb7, #0a738d, #cc00ffbb); 
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header .logo h1 {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Book Categories */
+#categories {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.category h3 {
+    margin: 10px 0;
+}
+
+.category a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Payment Form */
+#payment {
+    padding: 30px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#payment form {
+    display: flex;
+    flex-direction: column;
+}
+
+#payment .form-group {
+    margin-bottom: 15px;
+}
+
+#payment label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+#payment input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#payment button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#payment button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+
+<script>
+
+</script>

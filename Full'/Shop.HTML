@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Online Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Bookstore</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\Student\Desktop\Full'\index.HTML">Home</a></li>
+                <li><a href="C:\Users\Student\Desktop\Full'\Categories.html">Categories</a></li>
+                <li><a href="C:\Users\Student\Desktop\Full'\About.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <h2>Filter by Category</h2>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-fiction</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="romance">Romance</option>
+                <!-- Add more categories as needed -->
+            </select>
+        </section>
+
+        <section class="books" id="book-list">
+            <!-- Books will be dynamically loaded here -->
+        </section>
+
+        <section class="load-more">
+            <button id="load-more" onclick="loadMoreBooks()">See More Books</button>
+        </section>
+    </main>
+
+    <section class="books" id="book-list">
+        <!-- Book 1 -->
+        <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p class="author">Author 1</p>
+            <p class="price">$15.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    
+        <!-- Book 2 -->
+        <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p class="author">Author 2</p>
+            <p class="price">$12.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    
+        <!-- Book 3 -->
+        <div class="book">
+            <img src="book3.jpg" alt="Book 3">
+            <h3>Book Title 3</h3>
+            <p class="author">Author 3</p>
+            <p class="price">$18.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    
+        <!-- Book 4 -->
+        <div class="book">
+            <img src="book4.jpg" alt="Book 4">
+            <h3>Book Title 4</h3>
+            <p class="author">Author 4</p>
+            <p class="price">$19.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    
+        <!-- Book 5 -->
+        <div class="book">
+            <img src="book5.jpg" alt="Book 5">
+            <h3>Book Title 5</h3>
+            <p class="author">Author 5</p>
+            <p class="price">$14.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    
+        <!-- Book 6 -->
+        <div class="book">
+            <img src="book6.jpg" alt="Book 6">
+            <h3>Book Title 6</h3>
+            <p class="author">Author 6</p>
+            <p class="price">$22.99</p>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    
+        <!-- More Books ... -->
+        <!-- Book 7, 8, 9, etc. -->
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    /* General Styles */
+/* Gradient background */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(45deg, #45946c, #6bffa4, #2273ca); 
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header .logo h1 {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book {
+    background-color: white;
+    width: 23%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.book h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.book .author {
+    font-style: italic;
+}
+
+.book .price {
+    color: #007bff;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#load-more {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#load-more:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+</style>
+
+<script>
+    const books = [
+    {
+        title: 'Book Title 1',
+        author: 'Author 1',
+        price: '$15.99',
+        imgSrc: 'book1.jpg'
+    },
+    {
+        title: 'Book Title 2',
+        author: 'Author 2',
+        price: '$12.99',
+        imgSrc: 'book2.jpg'
+    },
+    {
+        title: 'Book Title 3',
+        author: 'Author 3',
+        price: '$18.99',
+        imgSrc: 'book3.jpg'
+    },
+    {
+        title: 'Book Title 4',
+        author: 'Author 4',
+        price: '$19.99',
+        imgSrc: 'book4.jpg'
+    },
+    {
+        title: 'Book Title 5',
+        author: 'Author 5',
+        price: '$14.99',
+        imgSrc: 'book5.jpg'
+    },
+    {
+        title: 'Book Title 6',
+        author: 'Author 6',
+        price: '$22.99',
+        imgSrc: 'book6.jpg'
+    },
+    // Add more books as needed
+];
+
+let bookCount = 0; // Keep track of how many books we've shown
+
+function loadBooks() {
+    const bookList = document.getElementById('book-list');
+
+    // Check how many books to show
+    const booksToShow = books.slice(bookCount, bookCount + 5); // Show 5 more books at a time
+
+    booksToShow.forEach(book => {
+        const bookElement = document.createElement('div');
+        bookElement.classList.add('book');
+
+        bookElement.innerHTML = `
+            <img src="${book.imgSrc}" alt="${book.title}">
+            <h3>${book.title}</h3>
+            <p class="author">${book.author}</p>
+            <p class="price">${book.price}</p>
+            <button class="buy-btn">Buy Now</button>
+        `;
+
+        bookList.appendChild(bookElement);
+    });
+
+    // Update the bookCount to show the next batch
+    bookCount += booksToShow.length;
+}
+
+// Initial load
+document.addEventListener('DOMContentLoaded', () => {
+    loadBooks(); // Load the first batch of books
+});
+
+// Load more books when the button is clicked
+function loadMoreBooks() {
+    loadBooks(); // Load 5 more books when the button is clicked
+}
+
+</script>
