@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Online Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>BookStore</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="FirstPage.html">Home</a></li>
+               
+                
+                <li><a href="Contact .HTML">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Explore by Categories</h2>
+        <div class="category-list">
+            <div class="category">
+                <img src="https://via.placeholder.com/200x200" alt="Fiction">
+                <h3>Fiction</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200x200" alt="Non-fiction">
+                <h3>Non-fiction</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200x200" alt="Science Fiction">
+                <h3>Science Fiction</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200x200" alt="Romance">
+                <h3>Romance</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 BookStore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #b625ff, #ffc519);
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(to right, #46fd5c, #1bc0e1);
+    padding: 10px 0;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff9900;
+}
+
+/* Categories Section */
+.categories {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 28px;
+    color: #232f3e;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category h3 {
+    font-size: 20px;
+    color: #232f3e;
+    margin-top: 10px;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Section */
+.footer {
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 80%;
+    }
+}
+
+</style>

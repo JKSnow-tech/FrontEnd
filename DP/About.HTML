@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Online Bookstore</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="FirstPage.html">Home</a></li>
+                <li><a href="BookDetails.html">Books</a></li>
+                <li><a href="Contact .HTML">Contact</a></li>
+                <li><a href="Form .html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>Welcome to our Online Bookstore! We believe in the power of books to transform lives. Our bookstore offers a wide variety of books from all genres, catering to every reader’s taste. Whether you're a fan of fiction, non-fiction, or looking for the latest bestsellers, we have something for you!</p>
+
+            <h3>Our Mission</h3>
+            <p>Our mission is to provide quality books at affordable prices and create an enjoyable shopping experience for all book lovers. We aim to promote reading and spread the joy of books to everyone, no matter where they are.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Online Bookstore</p>
+    </footer>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #b625ff, #ffc519);
+}
+
+header {
+    background: linear-gradient(to right, #46fd5c, #1bc0e1);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section, .contact-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.about-section h2, .contact-section h2 {
+    color: #333;
+}
+
+.about-section p, .contact-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section form label {
+    font-weight: bold;
+}
+
+.contact-section form input, .contact-section form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-section form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+</style>
