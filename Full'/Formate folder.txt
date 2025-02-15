@@ -1,0 +1,12 @@
+your-project-folder/
+│
+├── public/                # Contains static files (HTML, CSS, JS)
+│   └── index.html         # Your Contact Us page
+│   └── styles.css         # Your CSS files
+│   └── script.js          # Your JavaScript files
+│
+├── server.js              # The Node.js server
+├── package.json           # Your project dependencies
+└── node_modules/          # Automatically generated folder when installing dependencies
+
+\\ thye folder should be in this formate
